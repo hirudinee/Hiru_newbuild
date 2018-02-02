@@ -4,8 +4,10 @@ exports.handler = function (event, context, callback) {
 
 
 	ddb.get({
-		TableName: 'ThuvvaTable',
-		Key: { 'ID': '002' }
+		TableName: 'Hirutable',
+		Key: {
+			'ID': '001'
+		}
 	}, function (err, data) {
 		if (err) {
 			//handle error
